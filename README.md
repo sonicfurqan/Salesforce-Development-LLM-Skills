@@ -58,71 +58,12 @@ Sample output:
 Generated API documentation page with 4 outbound callouts and 2 inbound REST resources.
 Saved to: api-list/index.html
 ```
-
-## How it works
-
-This repo includes a CLI that installs a skill from a GitHub repository into the first valid skills directory it finds in your project:
-
-1. `.github/skills`
-2. `.copilot/skills`
-3. `.cloud/skills`
-
-If none exist, it creates `.github/skills` automatically.
-
-## Usage
-
-From this repository, run:
-
-```bash
-npm run skill:pull -- pull <github-url> <skill-name>
-```
-
-Optional flags:
-
-```bash
-npm run skill:pull -- pull <github-url> <skill-name> --target <path> --overwrite
-```
-
-- `--target` lets you force the destination folder
-- `--overwrite` replaces an existing skill in the target directory
-
-## Example: copy a skill into your project
-
-If you want to install one of the skills from this repo into another Salesforce project, run a command like this:
-
-```bash
-npm run skill:pull -- pull https://github.com/your-org/salesforce-development-skills generate-package-xml --target .github/skills --overwrite
-```
-
-This will copy the `generate-package-xml` skill into your project’s `.github/skills` folder so it is available to your assistant and tooling.
-
-You can also install the API docs skill the same way:
-
-```bash
-npm run skill:pull -- pull https://github.com/your-org/salesforce-development-skills generate-salesforce-api-docs --target .github/skills --overwrite
-```
-
-## Example from this repo
-
-If you are using this repo directly and want to install one of its bundled skills into a project folder from the command line:
-
-```bash
-cd /path/to/your/project
-npm install
-npx skill-pull --help
-```
-
-Or, if the project already has this repo wired as a local CLI tool, use:
-
-```bash
-npm run skill:pull -- pull https://github.com/your-org/salesforce-development-skills generate-package-xml
-```
-
+ 
+ 
 ## Notes
 
 - This project is designed for Salesforce development workflows and org metadata automation.
-- The CLI is intentionally lightweight and repository-driven.
-- Skills are installed by reading the target repo, locating `SKILL.md`, and copying it to the project’s skills folder.
+ 
 
 ## License
 
