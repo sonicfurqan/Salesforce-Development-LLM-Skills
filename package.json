@@ -1,0 +1,15 @@
+{
+  "name": "salesforce-development-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generic CLI toolkit to install Copilot skills from GitHub repositories.",
+  "scripts": {
+    "skill:pull": "node src/cli.js",
+    "test": "echo \"No tests configured\"",
+    "lint": "echo \"No lint configured\""
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "license": "MIT"
+}
