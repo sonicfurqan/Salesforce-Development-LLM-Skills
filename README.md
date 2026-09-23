@@ -1,3 +1,21 @@
+# Repo setup
+
+
+
+## Ponytail
+- ponytail to reduce cost of token outputs
+- Repo: https://github.com/dietrichgebert/ponytail
+- load the plugin into your codeing agent
+
+# Code memory mcp
+- memory graph to ovide grep over and over again during search of code
+- Repo: https://github.com/DeusData/codebase-memory-mcp
+- Instal mcp in your pc
+- it installs to \AppData\Local\Programs\codebase-memory-mcp\codebase-memory-mcp.exe   
+- open directory and run "codebase-memory-mcp --ui=true --port=9749" in cmd to view and graph projects
+- run "codebase-memory-mcp config set auto_index true" in cmd so that it updates graph on all code change
+- run "codebase-memory-mcp config set watcher_enabled false" in cmd if you want to manualy register project to index or else it will index all projects
+
 # Salesforce Development Skills
 
 This repository contains reusable Salesforce-focused Copilot skills and a small CLI to install them into a project.
