@@ -21,6 +21,13 @@ A curated list of AI development tools and setup steps for Salesforce projects.
 - To register projects manually instead of indexing all projects, run:
     `codebase-memory-mcp config set watcher_enabled false`
 
+
+## Exteral Skills
+
+### Superpowers
+- Repository: [Superpowers](https://github.com/obra/superpowers)
+
+
 ## Existing Salesforce Skills
 
 - Use pre-built Salesforce skills to assist with development.
